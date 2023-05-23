@@ -1,9 +1,9 @@
-"src/**/*.{ts,tsx}":
+'src/**/*.{ts,tsx}':
   - eslint --fix
   - prettier --write
-"*.{js,cjs}":
+'*.{js,cjs}':
   - prettier --write
-# '*.{css,less,sass,scss}':
-#   - stylelint --fix
-"*.{json,md,yml,yaml}":
+'*.{css,less,sass,scss}':
+  - stylelint --fix
+'*.{json,md,yml,yaml}':
   - prettier --write
