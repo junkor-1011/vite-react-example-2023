@@ -11,7 +11,7 @@ module.exports = defineConfig({
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'standard-with-typescript',
-    // 'plugin:storybook/recommended',
+    'plugin:storybook/recommended',
     'prettier',
   ],
   parser: '@typescript-eslint/parser',
@@ -23,12 +23,7 @@ module.exports = defineConfig({
     sourceType: 'module',
     project: ['tsconfig.json'],
   },
-  plugins: [
-    'react',
-    'react-refresh',
-    '@typescript-eslint',
-    // 'testing-library',
-  ],
+  plugins: ['react', 'react-refresh', '@typescript-eslint', 'testing-library'],
   rules: {
     'react-refresh/only-export-components': 'warn',
   },
