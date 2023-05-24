@@ -19,11 +19,12 @@ export const LoggedOut: Story = {};
 
 // More on interaction testing: https://storybook.js.org/docs/react/writing-tests/interaction-testing
 export const LoggedIn: Story = {
+  // eslint-disable-next-line @typescript-eslint/require-await
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    const loginButton = await canvas.getByRole('button', {
+    const loginButton = canvas.getByRole('button', {
       name: /Log in/i,
     });
-    await userEvent.click(loginButton);
+    userEvent.click(loginButton);
   },
 };
