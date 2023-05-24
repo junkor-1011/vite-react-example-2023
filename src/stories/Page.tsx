@@ -1,4 +1,5 @@
 import React from 'react';
+import { css } from '@linaria/core';
 
 import { Header } from './Header';
 import './page.css';
@@ -26,7 +27,13 @@ export const Page: React.FC = () => {
       />
 
       <section className="storybook-page">
-        <h2>Pages in Storybook</h2>
+        <h2
+          className={css`
+            color: blue;
+          `}
+        >
+          Pages in Storybook
+        </h2>
         <p>
           We recommend building UIs with a{' '}
           <a

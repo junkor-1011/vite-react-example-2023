@@ -13,5 +13,13 @@ const config: StorybookConfig = {
   docs: {
     autodocs: 'tag',
   },
+  babel: (config) => {
+    if (config.presets != null) {
+      config.presets.push(require.resolve('@linaria/babel-preset'));
+    } else {
+      config.presets = [require.resolve('@linaria/babel-preset')]
+    }
+    return config;
+  },
 };
 export default config;
