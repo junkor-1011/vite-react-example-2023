@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { css } from '@linaria/core';
 import reactLogo from './assets/react.svg';
 // eslint-disable-next-line import/no-absolute-path
 import viteLogo from '/vite.svg';
@@ -23,6 +24,10 @@ const App: React.FC = () => {
           onClick={() => {
             setCount((count) => count + 1);
           }}
+          className={css`
+            color: green;
+            font-weight: bold;
+          `}
         >
           count is {count}
         </button>
