@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/react-vite';
+import linariaBabelPreset from '@linaria/babel-preset'
 const config: StorybookConfig = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   addons: [
@@ -15,9 +16,9 @@ const config: StorybookConfig = {
   },
   babel: (config) => {
     if (config.presets != null) {
-      config.presets.push(require.resolve('@linaria/babel-preset'));
+      config.presets.push(linariaBabelPreset);
     } else {
-      config.presets = [require.resolve('@linaria/babel-preset')]
+      config.presets = [linariaBabelPreset]
     }
     return config;
   },
