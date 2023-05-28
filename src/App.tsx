@@ -18,16 +18,22 @@ const App: React.FC = () => {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>
+        <span
+          className={css`
+            color: blue;
+            font-weight: bold;
+          `}
+        >
+          Vite + React
+        </span>
+      </h1>
       <div className="card">
         <button
           onClick={() => {
             setCount((count) => count + 1);
           }}
-          className={css`
-            color: green;
-            font-weight: bold;
-          `}
+          className="btn btn-primary"
         >
           count is {count}
         </button>
