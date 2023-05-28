@@ -10,13 +10,17 @@ const App: React.FC = () => {
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="grid grid-cols-2 gap-2">
+        <div>
+          <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
+            <img src={viteLogo} className="logo" alt="Vite logo" />
+          </a>
+        </div>
+        <div>
+          <a href="https://react.dev" target="_blank" rel="noreferrer">
+            <img src={reactLogo} className="logo react" alt="React logo" />
+          </a>
+        </div>
       </div>
       <h1>
         <span
@@ -33,7 +37,7 @@ const App: React.FC = () => {
           onClick={() => {
             setCount((count) => count + 1);
           }}
-          className="btn btn-primary"
+          className="btn btn-accent"
         >
           count is {count}
         </button>
