@@ -35,6 +35,11 @@ export const Page: React.FC = () => {
           Pages in Storybook
         </h2>
         <p>
+          <div className="badge badge-secondary">
+            this page use tailwindcss & daisyui.
+          </div>
+        </p>
+        <p>
           We recommend building UIs with a{' '}
           <a
             href="https://componentdriven.org"
